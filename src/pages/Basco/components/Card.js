@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ImageCard from './ImageCard';
 import box from '../../../static/box';
-import useWindowPosition from '../../../hook/useWindowPosition';
+import Form from './Form/Form.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,15 +16,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-export default function () {
+
+// Function that makes the card appear
+export default function CardBox () {
   const classes = useStyles();
-  const checked = useWindowPosition('header');
   return (
     <div>
       <div className={classes.root} id="card">
-        <ImageCard place={box[2]} checked={checked} />
-        <ImageCard place={box[3]} checked={checked} />  
-        <ImageCard place={box[4]} checked={checked} /> 
+        <Form/>
+        <ImageCard place={box[1]} />
+        <ImageCard place={box[0]}  />  
       </div>        
     </div>       
   );

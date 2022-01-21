@@ -3,19 +3,21 @@ import './style.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import BasicModal from '../../../Components/icon.js';
+import BascoLogo from './BascoLogo.svg';
 
 import { Link as Scroll } from 'react-scroll';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    
     fontFamily: 'Nunito',
   },
   appbar: {
-    background: 'linear-gradient(#247BA0, #13293D)' 
+    background: 'linear-gradient(#000, #292929)' 
   },
   appbarWrapper: {
     width: '80%',
@@ -32,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#13293D',
+    color: '#E8F1F2',
   },
   colorTextappBar: {
     color: '#E8F1F2', 
@@ -41,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   title: {
-    color: '#13293D',
+    color: '#E8F1F2',
     fontSize: '6.5rem',
     marginTop: '100px',
     [theme.breakpoints.down('md')]: {
@@ -53,14 +55,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   goDown: {
-    color: '#0047BA',
+    color: '#247BA0',
     fontSize: '3.5rem',
   },
   point: {
-    color: '#0047BA',
+    color: '#FF0000',
   },
   pointAppBar: {
-    color: '#0047BA',
+    color: '#FF0000',
   },
   textMain: {
     [theme.breakpoints.down('md')]: {
@@ -69,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: '1.5rem',
     },
-    color: '#13293D'
+    color: '#E8F1F2'
   }
 }));
 export default function Header() {
@@ -83,9 +85,9 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            <span className={classes.colorTextappBar}>plug with us<span className={classes.pointAppBar}>.</span></span>
+            <span className={classes.colorTextappBar}>BASCO DA GAMA<span className={classes.pointAppBar}>.</span></span>
           </h1>
-          <BasicModal/>
+          <img src={BascoLogo} className='BascoLogo' alt="BascoLogo" />
         </Toolbar>
       </AppBar>
       <Collapse
@@ -95,7 +97,7 @@ export default function Header() {
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            Welcome to <br />
+             <br />
             <span className={classes.colorText}>PWU<span className={classes.point}>.</span></span>
           </h1>
           <main>

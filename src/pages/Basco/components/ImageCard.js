@@ -32,7 +32,7 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
+    <Collapse >
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
