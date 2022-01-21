@@ -1,0 +1,4 @@
+.placeholder::-webkit-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(13 143 155 / var(--tw-text-opacity));
+}
