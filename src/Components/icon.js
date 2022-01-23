@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { IconButton} from '@material-ui/core';
+import logo from './vasco-da-gama-logo-2021.svg'
 
 const style = {
     position: 'absolute',
@@ -20,7 +21,7 @@ const style = {
 const useStyles = makeStyles((theme) => ({
     icon: {
       color: '#E8F1F2',
-      fontSize: '2rem',
+      width: '70px',
     },
     box: {
       background: 'linear-gradient(#247BA0, #13293D)',
@@ -56,7 +57,7 @@ export default function BasicModal() {
     return (
       <div>
         <IconButton onClick={handleOpen}>
-            <SortIcon className={classes.icon} />
+            <img src={logo} className='icon' alt="icon" className={classes.icon} />
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -64,13 +65,10 @@ export default function BasicModal() {
             >
                 <Box sx={style} className={classes.box}>               
                   <Button className={classes.dark} variant="contained" href="/">
-                    DARKMODE
+                    VASCOMODE
                   </Button>
-                  <Button className={classes.light} variant="contained" href="/light">
-                    LIGHTMODE
-                  </Button>
-                  <Button className={classes.test} variant="contained" href="/test">
-                    TEST-AB
+                  <Button className={classes.light} variant="contained" href="/BascoSerieB">
+                    BASCOMODE
                   </Button>
                 </Box>
             </Modal>

@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 // Function DarkMode
-export default function DarkMode() {
+export default function BascoMode() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

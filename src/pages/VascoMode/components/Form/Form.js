@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#247BA0',
   },
   boxForm: {
-    background: 'linear-gradient(#13293D, #247BA0)',
+    background: 'linear-gradient(#13293D, #011E41)',
     display: 'flex',
     textAlign: 'center',
     borderRadius: '15px',
@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   
 }));
+// Email sending function via emailjs lib
 export default function FormEmail() {
   function sendEmail(e) {
     e.preventDefault();
@@ -43,6 +44,7 @@ export default function FormEmail() {
 
 
 }
+// Form
   const classes = useStyles();
   return (
     <div>
@@ -56,7 +58,7 @@ export default function FormEmail() {
           <Input style={{color: '#E8F1F2'}} placeholder="Name" type="text" name="name" for="name" Validate />
           <Input style={{color: '#E8F1F2', marginTop: '20px'}} placeholder="Email" type="text" name="email" Validate For="email" />
           <Input style={{color: '#E8F1F2', marginTop: '40px'}} label="Description" multiline rows={4} Validate placeholder="Tell us about your project" name="menssage"/>
-          <Button variant="contained" style={{ marginTop: '50px', backgroundColor: '#0047BA',color: '#E8F1F2', fontFamily: 'Nunito'}} endIcon={<SendIcon />} type="submit" value="send">
+          <Button variant="contained" style={{ marginTop: '50px', backgroundColor: '#247BA0',color: '#E8F1F2', fontFamily: 'Nunito'}} endIcon={<SendIcon />} type="submit" value="send">
             Send
           </Button>        
       </form>

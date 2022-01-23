@@ -9,13 +9,14 @@ const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
     backgroundColor: '#13293D',
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg_alternative.jpg'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.webp'})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
   },
 }));
-export default function App() {
+// Function DarkMode
+export default function VascoMode() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
