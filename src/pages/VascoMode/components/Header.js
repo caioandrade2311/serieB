@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   goDown: {
-    color: '#247BA0',
+    color: '#FF0000',
     fontSize: '3.5rem',
   },
   point: {
@@ -97,11 +97,11 @@ export default function Header() {
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            Welcome to History <br />
-            <span className={classes.colorText}>PWU<span className={classes.point}>.</span></span>
+            BEM VINDO AO <br />
+            <span className={classes.colorText}>VASCO DA GAMA<span className={classes.point}>.</span></span>
           </h1>
           <main>
-            <h1 className={classes.textMain}>Submit your e-commerce project now and start your journey with us<span className={classes.point}>!</span></h1>
+            <h1 className={classes.textMain}>O GIGANTE DA COLINA<span className={classes.point}>!</span></h1>
           </main>
           <Scroll to="card" smooth={true}>
             <IconButton >

@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import ImageCard from './ImageCard';
 import box from '../../../static/box';
 import useWindowPosition from '../../../hook/useWindowPosition';
-import Form from './Form/Form.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +24,6 @@ export default function CardBox () {
   return (
     <div>
       <div className={classes.root} id="card">
-        <Form/>
         <ImageCard place={box[1]} checked={checked} />
         <ImageCard place={box[0]} checked={checked} />  
       </div>        

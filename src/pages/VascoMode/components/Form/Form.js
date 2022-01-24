@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#247BA0',
   },
   boxForm: {
-    background: 'linear-gradient(#13293D, #011E41)',
+    background: 'linear-gradient(#292929, #000)' ,
     display: 'flex',
     textAlign: 'center',
     borderRadius: '15px',
